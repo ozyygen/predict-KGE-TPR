@@ -159,7 +159,7 @@ def split_test_valid(diffv2_v1_ex):
   #1/2 of data to be test and 1/2 valid
   #randomizing 
   my_list = list(diffv2_v1_ex)
-  my_list = random.shuffle(my_list)
+  random.shuffle(my_list)
   diffv2_v1_ex = set(my_list)
  
   slen = round(len(diffv2_v1_ex) / 2) # we need 2 subsets
