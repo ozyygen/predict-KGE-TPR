@@ -73,7 +73,7 @@ def read_goa_file(goa_path):
  
   
   df = pd.read_csv(goa_path+".gaf.gz",
-                      compression='gzip', comment='!', 
+                      compression='gzip', comment='!', rows = 20000,
                       header=None, usecols=[1,3,4,8,13], 
                       names=["db_object_ID","qualifier","GO_ID", "aspect","date"], 
                       delimiter="\t")
@@ -156,6 +156,8 @@ def split_test_valid(diffv2_v1_ex):
   #split changed triples with existed entities in V2 into two
   #test and valid sets
   #1/2 of data to be test and 1/2 valid
+  diffv2_v1_ex = diffv2_v1_ex.iloc[np.random.permutation(len(diffv2_v1_ex))]
+  diffv2_v1_ex = diffv2_v1_ex.reset_index(drop=True)
   slen = round(len(diffv2_v1_ex) / 2) # we need 2 subsets
   test = set()
   valid = set()
