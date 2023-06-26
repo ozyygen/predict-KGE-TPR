@@ -10,5 +10,5 @@
 
  examples folder has several reasoner implementations for different datasets or scenarios.
 
- We will include the paper's link here soon!
+ The paper: [Predicting missing annotations in Gene Ontology with Knowledge Graph Embeddings and True Path Rule](https://ceur-ws.org/Vol-3415/paper-9.pdf)
 
