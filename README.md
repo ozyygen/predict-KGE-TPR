@@ -8,7 +8,10 @@
  * utils.py: All necessary functions for dataset creation in dataset_generation.ipynb
  * loaders.py, model_utils.py, models.py: All necessary functions for building, training, testing and evaluating TransE and TransE+TPR methods
 
- examples folder has several reasoner implementations for different datasets or scenarios.
+ experiments folder contains the real reasoner runs behind the paper's Scenario 1 results,
+ one notebook per reported dataset pair (GOA18-19 through GOA21-22). It also contains one
+ exploratory notebook (train&test_generation_sc2-2_TransE&GOA17-18.ipynb) for an
+ unreported dataset pair (GOA17-18), showing Scenario 2.2 test/valid-set construction only.
 
  The paper: [Predicting missing annotations in Gene Ontology with Knowledge Graph Embeddings and True Path Rule](https://ceur-ws.org/Vol-3415/paper-9.pdf)
 
